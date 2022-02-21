@@ -2,6 +2,8 @@
 import * as React from 'react';
 
 import Dayjs from 'dayjs';
+const relativeTime = require('dayjs/plugin/relativeTime');
+Dayjs.extend(relativeTime);
 
 export function humanizeTimestamp(timestamp, tDateTimeParser) {
   let time;
